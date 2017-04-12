@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload file - versione base</title>
+    </head>
+    <body>
+        <form enctype="multipart/form-data" name = "modulo_ftp" action=($_SERVER[PHP_SELF]); method="POST">
+              <table>
+                  <tr><td>Server FTP</td><td><input type="text" name="ftp_server" value="ftp_server"/></td></tr>
+                  <tr><td>Porta</td><td><input type="text" name="port" value="21"/></td></tr>
+                  <tr><td>Username</td><td><input type="text" name="username" value="username"/></td></tr>
+                  <tr><td>Password</td><td><input type="password" name="password" value="password"/></td></tr>
+                  <tr><td>File</td><td><input type="file" name="file"/></td></tr>
+                  <tr><td><input type="submit" name="send_file" value="Carica file"/></td>
+              </table> 
+        </form>
+    </body>
+</html>
